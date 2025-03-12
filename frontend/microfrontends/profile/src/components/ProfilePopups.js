@@ -1,8 +1,8 @@
+import React from "react";
+import api from "../utils/api";
 import EditProfilePopup from "./EditProfilePopup";
 import EditAvatarPopup from "./EditAvatarPopup";
 import InfoTooltip from "./InfoTooltip";
-import React from "react";
-import api from "../utils/api";
 
 const [isEditProfilePopupOpen] = React.useState(false);
 const [setCurrentUser] = React.useState({});

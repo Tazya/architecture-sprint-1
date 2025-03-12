@@ -6,7 +6,6 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 
 const printCompilationMessage = require('./compilation.config.js');
-const ProfilePopups = require("./src/components/ProfilePopups");
 
 module.exports = (_, argv) => ({
   output: {
@@ -58,6 +57,15 @@ module.exports = (_, argv) => ({
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {
+            encoding: 'base64'
+          }
+        }
+      }
     ],
   },
 

@@ -2,7 +2,7 @@ import React, { lazy }  from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
-import {CurrentUserContext} from "../../../src/contexts/CurrentUserContext";
+import {CurrentUserContext} from "./contexts/CurrentUserContext";
 import Header from "../src/components/Header";
 import ProtectedRoute from "../src/components/ProtectedRoute";
 import Main from "../src/components/Main";

@@ -57,6 +57,15 @@ module.exports = (_, argv) => ({
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {
+            encoding: 'base64'
+          }
+        }
+      }
     ],
   },
 
